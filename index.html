@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoC Ausrüstungen | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html" class="logo-link">
+                <div class="logo">COC<span>Startseite</span></div>
+            </a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pages/Rathauser/index.html">Rathäuser</a></li>
+            </ul>
+            <a href="https://discord.com/users/1279880896979406930" target="_blank">
+                <button class="btn-discord">Discord kontaktieren</button>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <p class="subtitle">CLASH OF CLANS • GUIDE</p>
+                <h1>Willkommen beim <br><span class="highlight">Ausrüstungs Guide</span></h1>
+                <p class="description">Hier findest du alle wichtigen Informationen zu den Ausrüstungen der Helden.</p>
+            </div>
+        </section>
+
+        <section class="clan-section">
+            <h1>Allgemeiner Guide</h1>
+            <p>Hier sind alle Helden und deren Ausrüstungen für alle Rathäuser aufgelistet. Klicke einfach auf "Ausrüstungen ansehen" um eine detaillierte Ansicht zu bekommen.</p>
+            <div class="clan-grid" id="clanGrid">
+                
+                <!-- Karte 1 King -->
+                <div class="clan-card card-1">
+                    <h3>Barbarenkönig</h3>
+                    <p class="clan-tag">Verfügbare Ausrüstungen</p>
+                    <div class="clan-stats">
+                        <div class="equip-icons">
+                            <div class="tooltip-container">
+                                <img src="images/King/Barbarian Puppet.png" alt="Barbarenpuppe">
+                                <span class="tooltip-text">Barbarenpuppe</span>
+                            </div>
+                            <div class="tooltip-container">
+                                <img src="images/King/Rage Vial.png" alt="Wutflasche">
+                                <span class="tooltip-text">Wutflasche</span>
+                            </div>
+                            <div class="tooltip-container">
+                                <img src="images/King/Earthquake Boots.png" alt="Erdbebenstiefel">
+                                <span class="tooltip-text">Erdbebenstiefel</span>
+                            </div>
+                            <div class="tooltip-container">
+                                <img src="images/King/Vampstache.png" alt="Vampirschnurrbart">
+                                <span class="tooltip-text">Vampirschnurrbart</span>
+                            </div>
+                            <div class="tooltip-container">
+                                <img src="images/King/Giant Gauntlet.png" alt="Riesenhandschuh">
+                                <span class="tooltip-text">Riesenhandschuh</span>
+                            </div>
+                            <div class="tooltip-container">
+                                <img src="images/King/Spiky Ball.png" alt="Stachelball">
+                                <span class="tooltip-text">Stachelball</span>
+                            </div>
+                            <div class="tooltip-container">
+                                <img src="images/King/Snake Bracelet.png" alt="Schlangenarmband">
+                                <span class="tooltip-text">Schlangenarmband</span>
+                            </div>
+                            <div class="tooltip-container">
+                                <img src="images/King/Stick Horse.png" alt="Steckenpferd">
+                                <span class="tooltip-text">Steckenpferd</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn-view">Ausrüstungen ansehen</button>
+                </div>
+                
+                <!-- Karte 2 Queen -->
+                <div class="clan-card card-2">
+                    <h3>Bogenschützen-Königin</h3>
+                    <p class="clan-tag">Verfügbare Ausrüstungen</p>
+                    <div class="clan-stats">
+                        <div class="equip-icons">
+                            <div class="tooltip-container">
+                                <img src="images/Queen/Archer Puppet.png" alt="Bogenschützinnen-Puppe">
+                                <span class="tooltip-text">Bogenschützinnen-Puppe</span>
+                            </div>
+                            <div class="tooltip-container">
+                                <img src="images/Queen/Invisibility Vial.png" alt="Unsichtbarkeitsflasche">
+                                <span class="tooltip-text">Unsichtbarkeitsflasche</span>
+                            </div>
+                            <div class="tooltip-container">
+                                <img src="images/Queen/Giant Arrow.png" alt="Riesenpfeil">
+                                <span class="tooltip-text">Riesenpfeil</span>
+                            </div>
+                            <div class="tooltip-container">
+                                <img src="images/Queen/Healer Puppet.png" alt="Heilerinnenpuppe">
+                                <span class="tooltip-text">Heilerinnenpuppe</span>
+                            </div>
+                            <div class="tooltip-container">
+                                <img src="images/Queen/Frozen Arrow.png" alt="Frostpfeil">
+                                <span class="tooltip-text">Frostpfeil</span>
+                            </div>
+                            <div class="tooltip-container">
+                                <img src="images/Queen/Magic Mirror.png" alt="Zauberspiegel">
+                                <span class="tooltip-text">Zauberspiegel</span>
+                            </div>
+                            <div class="tooltip-container">
+                                <img src="images/Queen/Action Figure.png" alt="Actionfigur">
+                                <span class="tooltip-text">Actionfigur</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn-view">Ausrüstungen ansehen</button>
+                </div>
+
+                <!-- Karte 3 Prinz -->
+                <div class="clan-card card-3">
+                    <h3>Lakaienprinz</h3>
+                    <p class="clan-tag">Verfügbare Ausrüstungen</p>
+                    <div class="clan-stats">
+                        <div class="equip-icons">
+                            <div class="tooltip-container">
+                                <img src="images/Minion Prince/Henchmen Puppet.png" alt="Schergenpuppe">
+                                <span class="tooltip-text">Schergenpuppe</span>
+                            </div>
+                            <div class="tooltip-container">
+                                <img src="images/Minion Prince/Dark Orb.png" alt="Dunkle Sphäre">
+                                <span class="tooltip-text">Dunkle Sphäre</span>
+                            </div>
+                            <div class="tooltip-container">
+                                <img src="images/Minion Prince/Metal Pants.png" alt="Metallhose">
+                                <span class="tooltip-text">Metallhose</span>
+                            </div>
+                            <div class="tooltip-container">
+                                <img src="images/Minion Prince/Noble Iron.png" alt="Edelhantel">
+                                <span class="tooltip-text">Edelhantel</span>
+                            </div>
+                            <div class="tooltip-container">
+                                <img src="images/Minion Prince/Dark Crown.png" alt="Dunkle Krone">
+                                <span class="tooltip-text">Dunkle Krone</span>
+                            </div>
+                            <div class="tooltip-container">
+                                <img src="images/Minion Prince/Meteor Staff.png" alt="Meteorstab">
+                                <span class="tooltip-text">Meteorstab</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn-view">Ausrüstungen ansehen</button>
+                </div>
+
+                <!-- Karte 4 Warden -->
+                <div class="clan-card card-4">
+                    <h3>Großer Wächter</h3>
+                    <p class="clan-tag">Verfügbare Ausrüstungen</p>
+                    <div class="clan-stats">
+                        <div class="equip-icons">
+                            <div class="tooltip-container">
+                                <img src="images/Warden/Eternal Tome.png" alt="Ewiger Wälzer">
+                                <span class="tooltip-text">Ewiger Wälzer</span>
+                            </div>
+                            <div class="tooltip-container">
+                                <img src="images/Warden/Life Gem.png" alt="Lebensjuwel">
+                                <span class="tooltip-text">Lebensjuwel</span>
+                            </div>
+                            <div class="tooltip-container">
+                                <img src="images/Warden/Rage Gem.png" alt="Wutjuwel">
+                                <span class="tooltip-text">Wutjuwel</span>
+                            </div>
+                            <div class="tooltip-container">
+                                <img src="images/Warden/Healing Tome.png" alt="Buch der Besserung">
+                                <span class="tooltip-text">Buch der Besserung</span>
+                            </div>
+                            <div class="tooltip-container">
+                                <img src="images/Warden/Heroic Torch.png" alt="Heroische Fackel">
+                                <span class="tooltip-text">Heroische Fackel</span>
+                            </div>
+                            <div class="tooltip-container">
+                                <img src="images/Warden/Fireball.png" alt="Feuerball">
+                                <span class="tooltip-text">Feuerball</span>
+                            </div>
+                            <div class="tooltip-container">
+                                <img src="images/Warden/Lavaloon Puppet.png" alt="Ballonhund-Puppe">
+                                <span class="tooltip-text">Ballonhund-Puppe</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn-view">Ausrüstungen ansehen</button>
+                </div>
+
+                <!-- Karte 5 Royal Champ -->
+                <div class="clan-card card-5">
+                    <h3>Königliche Gladiatorin</h3>
+                    <p class="clan-tag">Verfügbare Ausrüstungen</p>
+                    <div class="clan-stats">
+                        <div class="equip-icons">
+                            <div class="tooltip-container">
+                                <img src="images/Royal Champ/Seeking Shield.png" alt="Zielsuchender Schild">
+                                <span class="tooltip-text">Zielsuchender Schild</span>
+                            </div>
+                            <div class="tooltip-container">
+                                <img src="images/Royal Champ/Royal Gem.png" alt="Königliches Juwel">
+                                <span class="tooltip-text">Königliches Juwel</span>
+                            </div>
+                            <div class="tooltip-container">
+                                <img src="images/Royal Champ/Hog Rider Puppet.png" alt="Schweinereiter-Puppe">
+                                <span class="tooltip-text">Schweinereiter-Puppe</span>
+                            </div>
+                            <div class="tooltip-container">
+                                <img src="images/Royal Champ/Haste Vial.png" alt="Tempoflasche">
+                                <span class="tooltip-text">Tempoflasche</span>
+                            </div>
+                            <div class="tooltip-container">
+                                <img src="images/Royal Champ/Rocket Spear.png" alt="Raketenspeer">
+                                <span class="tooltip-text">Raketenspeer</span>
+                            </div>
+                            <div class="tooltip-container">
+                                <img src="images/Royal Champ/Electro Boots.png" alt="Elektrostiefel">
+                                <span class="tooltip-text">Elektrostiefel</span>
+                            </div>
+                            <div class="tooltip-container">
+                                <img src="images/Royal Champ/Frost Flake.png" alt="Frostflocke">
+                                <span class="tooltip-text">Frostflocke</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn-view">Ausrüstungen ansehen</button>
+                </div>
+
+                <!-- Karte 6 Duke -->
+                <div class="clan-card card-6">
+                    <h3>Drachenfürst</h3>
+                    <p class="clan-tag">Verfügbare Ausrüstungen</p>
+                    <div class="clan-stats">
+                        <div class="equip-icons">
+                            <div class="tooltip-container">
+                                <img src="images/Duke/Fire Heart.png" alt="Feuerherz">
+                                <span class="tooltip-text">Feuerherz</span>
+                            </div>
+                            <div class="tooltip-container">
+                                <img src="images/Duke/Flame Blower.png" alt="Flammengebläse">
+                                <span class="tooltip-text">Flammengebläse</span>
+                            </div>
+                            <div class="tooltip-container">
+                                <img src="images/Duke/Stun Blaster.png" alt="Betäubungs-Blaster">
+                                <span class="tooltip-text">Betäubungs-Blaster</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn-view">Ausrüstungen ansehen</button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
