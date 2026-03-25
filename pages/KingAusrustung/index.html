@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoC Ausrüstungen | King</title>
+    <link rel="icon" type="image/png" href="../../images/Hero EQ.png">
+    <link rel="stylesheet" href="../../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="../../index.html" class="logo-link">
+            <div class="logo"><span>Barbarenkönig</span></div>
+        </a>
+        <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../Rathauser/index.html">Rathäuser</a></li>
+            <li><a href="#">Tierlist</a></li>
+        </ul>
+        <a href="https://discord.com/users/1279880896979406930" target="_blank">
+            <button class="btn-discord">Discord kontaktieren</button>
+        </a>
+    </nav>
+</header>
+
+    <main>
+        <section class="clan-section">
+            <h1>Barbarenkönig Guide</h1>
+            <p>Hier findest du alle Ausrüstungen des Barbarenkönigs im Überblick. Klicke auf "Details ansehen" um die wichtigen Werte und Statistiken einzusehen. 
+                Das empfohlene Minimum-Level ist für dich farblich hervorgehoben, damit du sofort siehst, ab wann die Ausrüstung nützlich ist. Denn nicht jede Ausrüstung muss das maximale
+                Level erreichen um nützlich zu sein. Erze sind selten und mit dem Guide erreichst du maximale Effizienz deiner wertvollen Erze.
+            </p>
+            
+            <div class="clan-grid">
+                <!-- Karte 1 Barbarenpuppe -->
+                <div class="rathaus-card cardrh-8">
+                    <h3>Barbarenpuppe</h3>
+                    <div class="rathaus-icons">
+                        <img src="../../images/King/Barbarian Puppet.png" alt="Barbarenpuppe">
+                    </div>
+                    <a href="#" class="btn-view open-equip-modal" 
+                       data-hero="barbarian_king" 
+                       data-equip="barbarian_puppet">Details ansehen</a>
+                </div>
+
+                <!-- Karte 2 Wutflasche -->
+                <div class="rathaus-card cardrh-8">
+                    <h3>Wutflasche</h3>
+                    <div class="rathaus-icons">
+                        <img src="../../images/King/Rage Vial.png" alt="Wutflasche">
+                    </div>
+                    <a href="#" class="btn-view open-equip-modal" 
+                       data-hero="barbarian_king" 
+                       data-equip="rage_vial">Details ansehen</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Das Modal -->
+    <div id="equipmentModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modalData"></div>
+        </div>
+    </div>
+
+    <!-- Footer Bereich -->
+    <footer class="main-footer">
+    <div class="footer-container">
+        <div class="footer-section branding">
+            <div class="footer-logo">
+                <img src="../../images/MugiwaraCode.png" alt="Mugiwara Logo">
+                <span>MugiwaraCode</span>
+            </div>
+            <p>© 2026 MugiwaraCode • Inoffizielle Fanseite zu Clash of Clans. Diese Inhalte sind nicht mit Supercell verbunden, werden nicht von Supercell unterstützt, 
+                gesponsert oder ausdrücklich genehmigt.</p>
+        </div>
+
+        <div class="footer-section links">
+            <h3>Socials</h3>
+            <ul>
+                <li><a href="https://discord.com/users/1279880896979406930" target="_blank">Discord</a></li>
+                <li><a href="https://github.com/MugiwaraCoding" target="_blank">GitHub</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section developer">
+            <h3>Developer</h3>
+            <p>Made by MugiwaraCode</p>
+        </div>
+    </div>
+</footer>
+
+    <script src="../../script.js"></script>
+</body>
+</html>

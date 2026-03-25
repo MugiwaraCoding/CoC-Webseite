@@ -1,0 +1,74 @@
+{
+  "heroes": {
+    "barbarian_king": {
+      "name": "Barbarenkönig",
+      "equipment": {
+        "barbarian_puppet": {
+          "name": "Barbarenpuppe",
+          "rarity": "Common",
+          "table_headers": ["Level", "Barbaren Anzahl", "Barbaren Schaden Erhöhung", "Effektiver Schaden der Barbaren", "Glanz Erz", "Schimmer Erz"],
+          "levels": [
+            { "level": 1, "summoned": 8, "barb_damage_incr": 100, "performance_score":8, "shiny_cost": 0, "glowy_cost": 0 },
+            { "level": 2, "summoned": 8, "barb_damage_incr": 100, "performance_score":8, "shiny_cost": 120, "glowy_cost": 0 },
+            { "level": 3, "summoned": 16, "barb_damage_incr": 120, "performance_score":19.2, "shiny_cost": 240, "glowy_cost": 20 },
+            { "level": 4, "summoned": 16, "barb_damage_incr": 120, "performance_score":19.2, "shiny_cost": 400, "glowy_cost": 0 },
+            { "level": 5, "summoned": 16, "barb_damage_incr": 120, "performance_score":19.2, "shiny_cost": 600, "glowy_cost": 0 },
+            { "level": 6, "summoned": 20, "barb_damage_incr": 140, "performance_score":28, "shiny_cost": 840, "glowy_cost": 100 },
+            { "level": 7, "summoned": 20, "barb_damage_incr": 140, "performance_score":28, "shiny_cost": 1120, "glowy_cost": 0 },
+            { "level": 8, "summoned": 20, "barb_damage_incr": 140, "performance_score":28, "shiny_cost": 1440, "glowy_cost": 0 },
+            { "level": 9, "summoned": 30, "barb_damage_incr": 160, "performance_score":48, "shiny_cost": 1800, "glowy_cost": 200 },
+            { "level": 10, "summoned": 30, "barb_damage_incr": 160, "performance_score":48, "shiny_cost": 1900, "glowy_cost": 0 },
+            { "level": 11, "summoned": 30, "barb_damage_incr": 160, "performance_score":48, "shiny_cost": 2000, "glowy_cost": 0 },
+            { "level": 12, "summoned": 36, "barb_damage_incr": 180, "performance_score":64.8, "shiny_cost": 2100, "glowy_cost": 400 },
+            { "level": 13, "summoned": 36, "barb_damage_incr": 180, "performance_score":64.8, "shiny_cost": 2200, "glowy_cost": 0 },
+            { "level": 14, "summoned": 36, "barb_damage_incr": 180, "performance_score":64.8, "shiny_cost": 2300, "glowy_cost": 0 },
+            { "level": 15, "summoned": 40, "barb_damage_incr": 200, "performance_score":80, "shiny_cost": 2400, "glowy_cost": 600 },
+            { "level": 16, "summoned": 40, "barb_damage_incr": 200, "performance_score":80, "shiny_cost": 2500, "glowy_cost": 0 },
+            { "level": 17, "summoned": 40, "barb_damage_incr": 200, "performance_score":80, "shiny_cost": 2600, "glowy_cost": 0 },
+            { "level": 18, "summoned": 44, "barb_damage_incr": 220, "performance_score":96.8, "shiny_cost": 2700, "glowy_cost": 600 }
+          ]
+        },
+
+        "rage_vial": {
+          "name": "Wutflasche",
+          "rarity": "Common",
+          "table_headers": ["Level", "Schaden Erhöhung", "Bewegungsgeschwindigkeit Erhöhung", "Glanz Erz", "Schimmer Erz"],
+          "levels": [
+            { "level": 1, "damage_increase": 120, "speed_increase": 18.0, "shiny_cost": 0, "glowy_cost": 0 },
+            { "level": 2, "damage_increase": 120, "speed_increase": 18.0, "shiny_cost": 120, "glowy_cost": 20 },
+            { "level": 3, "damage_increase": 130, "speed_increase": 22.3, "shiny_cost": 240, "glowy_cost": 0 },
+            { "level": 4, "damage_increase": 130, "speed_increase": 22.3, "shiny_cost": 400, "glowy_cost": 0 },
+            { "level": 5, "damage_increase": 130, "speed_increase": 22.3, "shiny_cost": 600, "glowy_cost": 0 },
+            { "level": 6, "damage_increase": 135, "speed_increase": 25.5, "shiny_cost": 840, "glowy_cost": 100 },
+            { "level": 7, "damage_increase": 135, "speed_increase": 25.5, "shiny_cost": 1120, "glowy_cost": 0 },
+            { "level": 8, "damage_increase": 135, "speed_increase": 25.5, "shiny_cost": 1440, "glowy_cost": 0 },
+            { "level": 9, "damage_increase": 140, "speed_increase": 28.7, "shiny_cost": 1800, "glowy_cost": 200 },
+            { "level": 10, "damage_increase": 140, "speed_increase": 28.7, "shiny_cost": 1900, "glowy_cost": 0 },
+            { "level": 11, "damage_increase": 140, "speed_increase": 28.7, "shiny_cost": 2000, "glowy_cost": 0 },
+            { "level": 12, "damage_increase": 145, "speed_increase": 32.0, "shiny_cost": 2100, "glowy_cost": 400 },
+            { "level": 13, "damage_increase": 145, "speed_increase": 32.0, "shiny_cost": 2200, "glowy_cost": 0 },
+            { "level": 14, "damage_increase": 145, "speed_increase": 32.0, "shiny_cost": 2300, "glowy_cost": 0 },
+            { "level": 15, "damage_increase": 150, "speed_increase": 35.1, "shiny_cost": 2400, "glowy_cost": 600 },
+            { "level": 16, "damage_increase": 150, "speed_increase": 35.1, "shiny_cost": 2500, "glowy_cost": 0 },
+            { "level": 17, "damage_increase": 150, "speed_increase": 35.1, "shiny_cost": 2600, "glowy_cost": 0 },
+            { "level": 18, "damage_increase": 155, "speed_increase": 38.3, "shiny_cost": 2700, "glowy_cost": 600 }
+          ]
+        }
+
+
+      }
+    },
+
+    "archer_queen": {
+      "name": "Bogenschützinnen-Königin",
+      "equipment": {
+        "archer_puppet": {
+          "name": "Bogenschützen-Puppe",
+          "rarity": "Common",
+          "table_headers": ["Level", "Summoned Archers", "Invisibility Duration", "Performance Score", "Shiny Ore", "Glowy Ore"],
+          "levels": []
+        }
+      }
+    }
+  }
+}
