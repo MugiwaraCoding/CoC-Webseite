@@ -27,6 +27,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     function renderTable(item) {
+        // Holt das Highlight-Level aus der JSON (z.B. 9)
+        const targetLevel = item.highlight_level;
+
         modalData.innerHTML = `
             <div class="modal-header-info">
                 <h2>${item.name}</h2>
@@ -39,16 +42,21 @@ document.addEventListener('DOMContentLoaded', () => {
                     </tr>
                 </thead>
                 <tbody>
-                    ${item.levels.map(l => `
-                        <tr>
-                            <td>${l.level}</td>
-                            <td>${l.summoned || l.damage_increase || '-'}</td>
-                            <td>${l.barb_damage_incr || l.speed_increase || '-'}</td>
-                            <td>${l.performance_score || '-'}</td>
-                            <td>${l.shiny_cost}</td>
-                            <td>${l.glowy_cost}</td>
-                        </tr>
-                    `).join('')}
+                    ${item.levels.map(l => {
+                        // Prüfen, ob dieses Level hervorgehoben werden soll
+                        const isHighlighted = (l.level === targetLevel) ? 'class="row-highlight"' : '';
+                        
+                        return `
+                            <tr ${isHighlighted}>
+                                <td>${l.level}</td>
+                                <td>${l.summoned || l.damage_increase || '-'}</td>
+                                <td>${l.barb_damage_incr || l.speed_increase || '-'}</td>
+                                <td>${l.performance_score || '-'}</td>
+                                <td>${l.shiny_cost}</td>
+                                <td>${l.glowy_cost}</td>
+                            </tr>
+                        `;
+                    }).join('')}
                 </tbody>
             </table>
         `;

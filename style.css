@@ -442,9 +442,139 @@ h1 { font-size: 3.5rem; line-height: 1.1; margin-bottom: 20px; }
 
 
 
-/* ... (dein restliches CSS davor bleibt gleich) ... */
+/* Einzelne Ausrüstungen Cards */
+.singleeq-grid { 
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 30px;
+    justify-content: flex-start; /* Ändert die Ausrichtung von center auf links */
+}
 
-/* MODAL STYLES - KORRIGIERT */
+.singleeq-card {
+    width: 200px;       /* Hier die Breite anpassen */
+    height: 240px;      /* Hier die Höhe anpassen */
+    background-color: var(--card-bg);
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Verteilt Titel, Icon und Button gleichmäßig */
+    align-items: center;
+    
+    /* Hintergrund-Einstellungen */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; /* Sorgt dafür, dass das Hintergrundbild die Card füllt */
+    overflow: visible; 
+}
+
+/* Hintergrundbilder für die spezifischen Cards */
+.cardsingleeq-1 { background-image: linear-gradient(rgba(22, 22, 29, 0.8), rgba(22, 22, 29, 0.9)), url('images/King/Barbarian\ Puppet.png'); border-left: 4px solid #a855f7; }
+.cardsingleeq-2 { background-image: linear-gradient(rgba(22, 22, 29, 0.8), rgba(22, 22, 29, 0.9)), url('images/King/Rage\ Vial.png'); border-left: 4px solid #a855f7; }
+.cardsingleeq-3 { background-image: linear-gradient(rgba(22, 22, 29, 0.8), rgba(22, 22, 29, 0.9)), url('images/King/Earthquake\ Boots.png'); border-left: 4px solid #a855f7; }
+.cardsingleeq-4 { background-image: linear-gradient(rgba(22, 22, 29, 0.8), rgba(22, 22, 29, 0.9)), url('images/King/Vampstache.png'); border-left: 4px solid #a855f7; }
+.cardsingleeq-5 { background-image: linear-gradient(rgba(22, 22, 29, 0.8), rgba(22, 22, 29, 0.9)), url('images/King/Giant\ Gauntlet.png'); border-left: 4px solid #a855f7; }
+.cardsingleeq-6 { background-image: linear-gradient(rgba(22, 22, 29, 0.8), rgba(22, 22, 29, 0.9)), url('images/King/Spiky\ Ball.png'); border-left: 4px solid #a855f7; }
+.cardsingleeq-7 { background-image: linear-gradient(rgba(22, 22, 29, 0.8), rgba(22, 22, 29, 0.9)), url('images/King/Snake\ Bracelet.png'); border-left: 4px solid #a855f7; }
+.cardsingleeq-8 { background-image: linear-gradient(rgba(22, 22, 29, 0.8), rgba(22, 22, 29, 0.9)), url('images/King/Stick\ Horse.png'); border-left: 4px solid #a855f7; }
+
+/* Icon-Bereich */
+.singleeq-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1; /* Nimmt den verfügbaren Platz ein, um das Icon zu zentrieren */
+}
+
+.singleeq-icons img {
+    max-height: 80px; /* Skaliert das Icon passend zur Card-Größe */
+    width: auto;
+}
+
+.singleeq-card:hover { 
+    transform: translateY(-10px) !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border-color: var(--primary-color);
+}
+
+.tooltipsingleeq-container {
+    position: relative;
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.05); /* Dezenter Hintergrund für die Box */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Feiner Rand um das Bild */
+    border-radius: 12px; /* Abgerundete Ecken der Box */
+    padding: 12px; /* Abstand zwischen Bild und Box-Rand */
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.tooltipsingleeq-text {
+    visibility: hidden;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 12px;
+    position: absolute;
+    z-index: 100;
+    bottom: 133%; /* Abstand nach oben über die Box */
+    left: 50%;
+    transform: translateX(-50%) translateY(5px);
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+    font-size: 12px;
+    pointer-events: none;
+    border: 1px solid var(--primary-color);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    white-space: nowrap;
+    width: auto;
+}
+
+.tooltipsingleeq-container:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--primary-color);
+    transform: scale(1.05); /* Leichter Zoom-Effekt beim Hovern */
+}
+
+.tooltipsingleeq-container:hover .tooltipsingleeq-text {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-50%) translateY(0px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MODAL STYLES */
 .modal {
     display: none; 
     position: fixed; 
@@ -557,6 +687,40 @@ h1 { font-size: 3.5rem; line-height: 1.1; margin-bottom: 20px; }
     text-align: center;
     flex-grow: 1; /* Lässt die Überschrift den verfügbaren Platz einnehmen */
 }
+
+/* Klasse für die hervorgehobene Zeile */
+.row-highlight {
+    background-color: rgba(223, 130, 29, 0.3) !important; /* Dein Orange, aber transparent */
+    border: 2px solid #df821d !important;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* --- Bereich für alle Responsive Anpassungen --- */
 

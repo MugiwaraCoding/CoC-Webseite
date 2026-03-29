@@ -6,6 +6,7 @@
         "barbarian_puppet": {
           "name": "Barbarenpuppe",
           "rarity": "Common",
+          "highlight_level": 9,
           "table_headers": ["Level", "Barbaren Anzahl", "Barbaren Schaden Erhöhung", "Effektiver Schaden der Barbaren", "Glanz Erz", "Schimmer Erz"],
           "levels": [
             { "level": 1, "summoned": 8, "barb_damage_incr": 100, "performance_score":8, "shiny_cost": 0, "glowy_cost": 0 },
